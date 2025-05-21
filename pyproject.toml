@@ -35,6 +35,7 @@ lint = 'ruff check'
 pre_format = 'ruff check --fix'
 format = 'ruff format'
 
+pre_up = 'task format && docker-compose build'
 up = 'docker-compose up -d'
 
 pre_down = 'docker-compose stop'
