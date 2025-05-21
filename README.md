@@ -28,8 +28,9 @@ Dados brutos são ingeridos de um bucket S3, processados em camadas (Bronze → 
 
 ### **Pré-requisitos**  
 - Docker e Docker Compose  
-- Python 3.8+  
-- Acesso ao bucket `s3://dev-lab-02-us-east-2-landing/soccer/` (ou dados locais)  
+- Python 3.8+
+- UV (opcional): `pip install uv`
+- Acesso ao bucket `s3://dev-lab-02-us-east-2-landing/soccer/` (ou dados locais)
 
 ### **Passo a Passo**  
 1. **Clone o repositório**:
@@ -40,6 +41,16 @@ Dados brutos são ingeridos de um bucket S3, processados em camadas (Bronze → 
 2. **Instale as dependências com UV**:
    ```bash
    uv sync
+   .venv/Scripts/activate  # Windows
+   source .venv/bin/activate  # Linux/Mac
+   ```
+
+
+2.1 **Caso prefira usar pip (opcional)**:
+   ```bash
+   pip install -r requirements.txt
+   .venv/Scripts/activate  # Windows
+   source .venv/bin/activate  # Linux/Mac
    ```
 
 3. **Suba os containers**:  

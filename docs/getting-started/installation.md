@@ -3,6 +3,7 @@
 ### 📋 Pré-requisitos
 - 🐳 Docker e Docker Compose
 - 🐍 Python 3.8+
+- ⚙️ UV (opcional) `pip install uv` (para instalação de pacotes)
 - 📦 Acesso ao bucket `s3://dev-lab-02-us-east-2-landing/soccer/` (ou dados locais)
 
 ---
@@ -17,6 +18,15 @@ git clone https://github.com/matheusfabiao/soccer-analytics-pipeline.git
 #### 2. ⚙️ Instale as dependências com UV
 ```bash
 uv sync
+.venv/Scripts/activate  # Windows
+source .venv/bin/activate  # Linux/Mac
+```
+
+#### 2.1 (Opcional) 📦 Caso prefira usar pip
+```bash
+pip install -r requirements.txt
+.venv/Scripts/activate  # Windows
+source .venv/bin/activate  # Linux/Mac
 ```
 
 #### 3. 🐋 Suba os containers
