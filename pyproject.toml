@@ -1,5 +1,5 @@
 [project]
-name = "project"
+name = "soccer-analytics-pipeline"
 version = "0.1.0"
 description = "Solução modular para transformar dados brutos de futebol em insights acionáveis. Da ingestão à análise, com suporte a AWS Athena e ferramentas de dashboard."
 authors = [

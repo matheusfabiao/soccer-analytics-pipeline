@@ -1,6 +1,6 @@
-# Exemplos de Uso
+# 🛠️ Exemplos de Uso
 
-## Consultas no AWS Athena
+## 🔍 Consultas no AWS Athena
 
 ### 1. Acesse o Console AWS
 - Navegue até o serviço **Athena**
@@ -16,7 +16,7 @@
 
 ---
 
-### Passo 2: Executar Consultas
+### 📊 Passo 2: Executar Consultas
 
 #### No Editor de Consultas do Athena
 - Cole as consultas do arquivo `gold.sql`
@@ -40,8 +40,8 @@ LOCATION 's3://bucket-gold-zone/soccer/goals_by_league/';
 
 ---
 
-### Passo 3: Otimização para Performance
-- **Particionamento**: Se as tabelas Gold estiverem particionadas (ex: por `season`), adicione à definição:
+### ⚡ Passo 3: Otimização para Performance
+- **Particionamento**: Se as tabelas Gold estiverem particionadas (ex: por `season`), adicione:
 
 ```sql
 PARTITIONED BY (season STRING)
@@ -51,19 +51,19 @@ PARTITIONED BY (season STRING)
 
 ---
 
-### Passo 4: Monitoramento
+### 📈 Passo 4: Monitoramento
 - **Custos**: Verifique o **AWS Cost Explorer** para monitorar gastos com consultas
 - **Performance**: Use o **Athena Query History** para identificar consultas lentas
 
 ---
 
-> #### Para mais informações, consulte a documentação oficial do AWS Athena:
+> ℹ️ Para mais informações, consulte a documentação oficial do AWS Athena:
 
->[Acessar a Documentação](https://docs.aws.amazon.com/pt_br/athena/latest/ug/what-is.html){:target="_blank", .md-button}
+> [📚 Acessar a Documentação](https://docs.aws.amazon.com/pt_br/athena/latest/ug/what-is.html){:target="_blank", .md-button}
 
 ---
 
-## AWS QuickSight
+## 📊 AWS QuickSight
 
 ### Dashboards no QuickSight
 

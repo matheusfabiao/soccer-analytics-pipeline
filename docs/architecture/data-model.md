@@ -1,15 +1,15 @@
-# Modelo de Dados
+# 📊 Modelo de Dados
 
-## Conjunto de Dados Utilizado: European Soccer Database
+## 📦 Conjunto de Dados Utilizado: European Soccer Database
 
 **Descrição:**  
 O European Soccer Database é um conjunto de dados para análise e machine learning de partidas de futebol profissional europeu. Contém mais de 25.000 partidas, mais de 10.000 jogadores, atributos extraídos da série de videogames FIFA da EA Sports, dados de odds de apostas, eventos detalhados de partidas e formações de times, abrangendo 11 países europeus e temporadas de 2008 a 2016.
 
 ---
 
-## Principais Tabelas
+## 🗃️ Principais Tabelas
 
-### Tabelas Originais
+### 🏗️ Tabelas Originais
 
 #### Table: country  
 **Descrição:** Lista de países participantes.
@@ -69,7 +69,7 @@ O European Soccer Database é um conjunto de dados para análise e machine learn
 
 ---
 
-## Tabelas Derivadas (Camadas Silver e Gold)
+## 🏗️ Tabelas Derivadas (Camadas Silver e Gold)
 
 ### Camada Silver
 
@@ -147,7 +147,7 @@ O European Soccer Database é um conjunto de dados para análise e machine learn
 
 ---
 
-## Relacionamentos
+## 🔗 Relacionamentos
 
 ```mermaid
 erDiagram
@@ -162,7 +162,7 @@ erDiagram
 
 ---
 
-## Fluxo de Transformação
+## 🔄 Fluxo de Transformação
 
 ```mermaid
 flowchart LR

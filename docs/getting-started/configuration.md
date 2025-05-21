@@ -1,6 +1,6 @@
-# Configuração
+# ⚙️ Configuração
 
-## Variáveis de Ambiente
+## 🔧 Variáveis de Ambiente
 
 Configure no arquivo `.env`:
 
@@ -19,13 +19,19 @@ AWS_ENDPOINT=endereco-do-servico-s3
 # Configurações Jupyter
 JUPYTER_TOKEN=senhasegura
 ```
-## Configuração do MinIO
 
-Acesse o MinIO através do endereço `http://localhost:9000` e faça login com as credenciais definidas no arquivo `.env`.
+---
+
+## 🗄️ Configuração do MinIO
+
+> 🔑 Acesse o MinIO através do endereço `http://localhost:9000` e faça login com as credenciais definidas no arquivo `.env`.
+
 O sistema espera esta estrutura no MinIO/S3:
+
 ```
 bucket-bronze-zone/soccer
 bucket-silver-zone/soccer
 bucket-gold-zone/soccer
 ```
-As demais partições serão criadas automaticamente através da execução dos notebooks.
+
+> 📌 As demais partições serão criadas automaticamente através da execução dos notebooks.

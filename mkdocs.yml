@@ -2,23 +2,14 @@ site_name: Soccer Analytics Pipeline
 site_description: A pipeline for soccer analytics
 site_author: Matheus Fabião
 repo_url: https://github.com/matheusfabiao/soccer-analytics-pipeline/
-repo_name: soccer-analytics-pipeline
+repo_name: Soccer Analytics Pipeline
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   language: pt-BR
   logo: assets/soccer-ball.png
-  favicon: assets/soccer-ball.png
   palette:
-    # Esquema de cores padrão (claro)
-    - scheme: default
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/weather-sunny
-        name: Modo claro
-    
     # Esquema de cores escuro
     - scheme: slate
       primary: indigo
@@ -28,6 +19,14 @@ theme:
         name: Modo escuro
       media: "(prefers-color-scheme: dark)"
       preferred: true
+
+    # Esquema de cores padrão (claro)
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
 
 nav:
   - Início: index.md
