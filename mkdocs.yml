@@ -1,0 +1,57 @@
+site_name: Soccer Analytics Pipeline
+site_description: A pipeline for soccer analytics
+site_author: Matheus Fabião
+repo_url: https://github.com/matheusfabiao/soccer-analytics-pipeline/
+repo_name: soccer-analytics-pipeline
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/soccer-ball.png
+  favicon: assets/soccer-ball.png
+  palette:
+    # Esquema de cores padrão (claro)
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+    
+    # Esquema de cores escuro
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+      media: "(prefers-color-scheme: dark)"
+      preferred: true
+
+nav:
+  - Início: index.md
+  - Começando:
+    - Instalação: getting-started/installation.md
+    - Configuração: getting-started/configuration.md
+  - Arquitetura:
+    - Visão Geral: architecture/overview.md
+    - Modelo de Dados: architecture/data-model.md
+  - Uso Prático:
+    - Exemplos: usage/examples.md
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - mermaid2:
+      arguments:
+        theme: default
+        themeVariables:
+          primaryColor: '#f5f5f5'
+          primaryTextColor: '#000'
+          primaryBorderColor: '#ccc'
+          lineColor: '#333'

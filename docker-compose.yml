@@ -5,29 +5,29 @@ services:
     ports:
       - "8888:8888"
     networks:
-      - lab-02-network
+      - soccer-analytics-net
     env_file:
       - env_files/.env
     depends_on:
       - minio
     volumes:
-      - ./notebooks:/home/jovyan/work  # Para persistir notebooks
+      - ./notebooks:/home/jovyan/work
 
   minio:
     image: quay.io/minio/minio
     container_name: minio
-    hostname: minio  # Importante para a resolução de nome na rede
+    hostname: minio
     ports:
       - "9000:9000"
       - "9001:9001"
     networks:
-      - lab-02-network
+      - soccer-analytics-net
     env_file:
       - env_files/.env
     volumes:
-      - ./minio/data:/data  # Volume para persistência de dados
+      - ./minio/data:/data
     command: server /data --console-address ":9001"
 
 networks:
-  lab-02-network:
-    name: lab-02-network
+  soccer-analytics-net:
+    name: soccer-analytics-net
