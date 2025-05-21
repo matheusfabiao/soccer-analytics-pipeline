@@ -57,6 +57,12 @@ PARTITIONED BY (season STRING)
 
 ---
 
+> #### Para mais informações, consulte a documentação oficial do AWS Athena:
+
+>[Acessar a Documentação](https://docs.aws.amazon.com/pt_br/athena/latest/ug/what-is.html){:target="_blank", .md-button}
+
+---
+
 ## AWS QuickSight
 
 ### Dashboards no QuickSight
